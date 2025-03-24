@@ -12,5 +12,5 @@ import { AddressBookComponent } from "./components/address-book/address-book.com
 })
 export class AppComponent {
   title = 'AddressBook-Frontend';
-  imageUrl = './assets/Logo.png';
+  imageUrl = 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
 }
