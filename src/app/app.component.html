@@ -1,6 +1,7 @@
 <div>
     <nav>
-        <img [src]="imageUrl" alt="Logo" />
+        <img [src]="imageUrl" alt="Logo" *ngIf="imageUrl" />
+        <p *ngIf="!imageUrl">Image not available</p>
     </nav>
     <app-address-book></app-address-book>
 </div>
