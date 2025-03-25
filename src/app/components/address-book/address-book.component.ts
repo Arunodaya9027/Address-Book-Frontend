@@ -15,6 +15,7 @@ interface Person {
 
 @Component({
   selector: 'app-address-book',
+  standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './address-book.component.html',
   styleUrl: './address-book.component.scss'

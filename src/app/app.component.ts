@@ -1,16 +1,21 @@
-import { Component, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+// import { Component, NgModule } from '@angular/core';
+// import { CommonModule } from '@angular/common';
+// import { RouterOutlet } from '@angular/router';
 // import { AuthComponent } from "./components/auth/auth.component";
-import { AddressBookComponent } from "./components/address-book/address-book.component";
+// import { AddressBookComponent } from "./components/address-book/address-book.component";
+
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [AddressBookComponent, CommonModule],
+  standalone: true,
+  imports: [RouterModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'AddressBook-Frontend';
-  imageUrl = 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
+  imageUrl = '../../public/logo.png';
 }
