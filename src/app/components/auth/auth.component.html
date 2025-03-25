@@ -60,17 +60,6 @@
                         <input placeholder="Enter your Password" class="input" type="password" id="password" [(ngModel)]="signUpData.password" name="password" required>
                     </div>
                     
-                    <div class="flex-row">
-                        <div class="form-group mb-3">
-                            <label>Allow Notifications</label>
-                            <div>
-                            <input type="radio" id="allowYes" [(ngModel)]="signUpData.allowNotifications" name="allowNotifications" [value]="true" />
-                            <label for="allowYes">Yes</label>
-                            <input type="radio" id="allowNo" [(ngModel)]="signUpData.allowNotifications" name="allowNotifications" [value]="false" />
-                            <label for="allowNo">No</label>
-                            </div>
-                        </div>
-                    </div>
                     <button class="button-submit">Sign Up</button>
                     <p class="p">Already have an account? <span class="span" (click)="showSignIn()">Sign In</span></p>
                 </form>
